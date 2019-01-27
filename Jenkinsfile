@@ -18,8 +18,9 @@ pipeline {
         stage('Run job') {
             steps {
                 sh "cd $WORKSPACE"
-				sh "ls -la"
+		sh "ls -la"
                 sh "echo $TEST_STRING1"
+		sh "echo $BRANCH_NAME"
             }
         }
         
